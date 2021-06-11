@@ -13,7 +13,7 @@
 
 ## Description
 
-*{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}*
+This program will take a number from a user and count up from zero to the user's inputted number. Numbers that contain 3, 2, and 1 will be replaced with text. Numbers that contain a 3 take priority over 2, and 2 takes priority over 1 in regards to text replacement. 
 
 ## Specs
 
@@ -103,24 +103,29 @@ Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4
 ```
 Test: "It should not accept input any larger than 1,000,000"
 User Input: 1,000,001
-Code: sizeCheck(1,000,001)
+Code: if (parseInt($('#userNumber').val()) > 1000000)
 Expected Output: That's a little much, don't you think?
+```
+```
+Test: "It should not accept input any smaller than 0"
+User Input: -5
+Code: if (parseInt($('#userNumber').val()) < 0)
+Expected Output: I bet you think you're pretty clever, huh? Try again with a positive integer. And not too big, ya hear me?
 ```
 
 ## Setup/Installation Requirements
 
-- *This is a great place*
-- *to list setup instructions*
-- *in a simple*
-- *easy-to-understand*
-- *format*
+- Create and enter a directory on your local machine for the project
+- Clone public repository from GitHub using `git clone https://github.com/mireie/mr-beep-boop`
+- Open `index.html` to view the web page in your browser
 
-*{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}*
+## GitHub Links
+- [GitHub Repo](https://github.com/mireie/mr-beep-boop)
+- [GitHub Pages](https://mireie.github.io/mr-beep-boop/)
 
 ## Known Bugs
 
-- *Any known issues*
-- *should go here*
+No known bugs at this time.
 
 ## License
 

@@ -46,7 +46,10 @@ $(document).ready(function() {
     event.preventDefault();
     if (parseInt($('#userNumber').val()) > 1000000) {
       $('p#output').text("That's a little much, don't you think? Try again with a smaller number or Mr. Beep Boop might explode your browser.");
-    } else {
+    } else if (parseInt($('#userNumber').val()) < 0) {
+      $('p#output').text("I bet you think you're pretty clever, huh? Try again with a positive integer. And not too beeping big, ya hear me, boop?"); 
+    }
+      else {
       outputArray = mrBeepBoop(parseInt($('#userNumber').val()));
       $('p#output').text(outputArray.join(", "));
       $('#result').show();

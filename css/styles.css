@@ -11,7 +11,7 @@ h1 {
 #entry {
   background-color: lightcoral;
 }
-#entry p {
+#entry p, #result h2 {
   margin-top:1rem;
 }
 .entry-block {
