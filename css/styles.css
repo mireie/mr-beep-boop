@@ -20,3 +20,12 @@ margin-bottom:1rem;
 #userNumber {
   text-align: center;
 }
+input[type="number"], input[type="text"] {
+  display:block;
+  clear:both;
+}
+
+.btn {
+  display:block;
+  clear:both;
+}

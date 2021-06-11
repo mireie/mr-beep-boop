@@ -20,7 +20,18 @@
         <form class="sticky-top" id="form">
           <p>Enter a number below and Mr. Beep Boop will give you a result!</p>
           <div class="entry-block">
-            <input required id="userNumber" type="number"></input>
+            <input required id="userNumber" type="number">
+            <label for="number">Number</label><br>
+            <input type="checkbox" name="advanced" id="advanced">
+            <label for="advanced">Enable advanced features?</label>
+            <div class="advanced">
+              <input type="text" id="text1">
+              <label for="text1">Text 1</label>
+              <input type="text" id="text2">
+              <label for="text2">Text 2</label>
+              <input type="text" id="text3">
+              <label for="text3">Text 3</label>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
