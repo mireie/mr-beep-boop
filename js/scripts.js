@@ -44,8 +44,12 @@ $(document).ready(function() {
   let outputArray = [];
   $('form#form').submit(function(event) {
     event.preventDefault();
-    outputArray = mrBeepBoop(parseInt($('#userNumber').val()));
-    $('p#output').text(outputArray.join(", "));
-    $('#result').show();
+    if (parseInt($('#userNumber').val()) > 1000000) {
+      $('p#output').text("That's a little much, don't you think? Try again with a smaller number or Mr. Beep Boop might explode your browser.");
+    } else {
+      outputArray = mrBeepBoop(parseInt($('#userNumber').val()));
+      $('p#output').text(outputArray.join(", "));
+      $('#result').show();
+    }
   });
 })

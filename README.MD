@@ -100,6 +100,12 @@ outputArray = mrBeepBoop(parseInt($('#userNumber').val()));
 Code: $('p#output').text(outputArray.join(", "));
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4
 ```
+```
+Test: "It should not accept input any larger than 1,000,000"
+User Input: 1,000,001
+Code: sizeCheck(1,000,001)
+Expected Output: That's a little much, don't you think?
+```
 
 ## Setup/Installation Requirements
 
