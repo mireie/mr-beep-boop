@@ -67,13 +67,38 @@ Test: "It should return a 2 if a 2 is found in the index"
 Code:
 numContains(132);
 Expected Output: 2
-
 ```
+
 ```
 Test: "It should return a 3 if a 3 is found in the index"
 Code:
 numContains(132);
 Expected Output: 3
+```
+---
+
+```
+Describe: Interface Logic
+
+Test: "It should collect user entry on submit"
+User Input: 5
+Code: $('#userNumber').val()
+Expected Output: 5
+```
+
+```
+Test: "It should collect user entry as an integer"
+User Input: 01234
+Code: (parseInt($('#userNumber').val()));
+Expected Output: 1234
+```
+
+```
+Test: "It should output the calculated array as a comma separated paragraph"
+User Input: 4
+outputArray = mrBeepBoop(parseInt($('#userNumber').val()));
+Code: $('p#output').text(outputArray.join(", "));
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4
 ```
 
 ## Setup/Installation Requirements

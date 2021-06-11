@@ -39,7 +39,7 @@ function numContains(index) {
   }
 }
 
-//interface logic
+//Interface logic
 $(document).ready(function() {
   let outputArray = [];
   $('form#form').submit(function(event) {
