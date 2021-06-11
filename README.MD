@@ -46,6 +46,13 @@ Code:
 mrBeepBoop(10);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]
 ```
+
+```
+Test: "It should return from the match array if the index contains a 1, 2, or 3."
+Code:
+mrBeepBoop(10);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]
+```
 ---
 ```
 Describe: numContains()
