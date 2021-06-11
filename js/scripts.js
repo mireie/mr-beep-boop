@@ -14,16 +14,27 @@ function numContains(index) {
   let indexArray=[];
   let indexString=index.toString();
   let output = 0;
+  let check3 = false;
+  let check2 = false;
+  let check1 = false;
   indexArray = indexString.split("");
   for (let i = 0; i < indexArray.length; i++) {
     if (indexArray[i] === "3") {
-      output = 3;
+      check3 = true;
     } else if (indexArray[i] === "2") {
-      output = 2;
+      check2 = true;
     } else if (indexArray[i] === "1") {
-      output = 1;
+      check1 = true;
     } else {
     }
   }
-  return output;
+  if (check3 === true) {
+    return 3;
+  } else if (check2 === true) {
+    return 2;
+  } else if (check1 === true) {
+    return 1;
+  } else {
+    return 0;
+  }
 }
