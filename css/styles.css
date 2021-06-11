@@ -1,11 +1,22 @@
+body {
+  font-family:'Courier New', Courier, monospace;
+  background-color: #333;
+}
+h1 {
+  color:white;
+}
 #result {
   background-color:aqua;
-  display:none;
 }
 #entry {
   background-color: lightcoral;
 }
-#result:hover {
-  max-height:500px;
-  background-color: darkblue;
+#entry p {
+  margin-top:1rem;
+}
+.entry-block {
+margin-bottom:1rem;
+}
+#userNumber {
+  text-align: center;
 }
