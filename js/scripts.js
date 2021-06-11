@@ -40,3 +40,14 @@ function numContains(index) {
 }
 
 //interface logic
+$(document).ready(function() {
+  let outputArray = [];
+  $('form#form').submit(function(event) {
+    event.preventDefault();
+    outputArray = mrBeepBoop(parseInt($('#userNumber').val()));
+    outputArray.forEach(function(element) {
+      $('#output').append(element+", ");
+    })
+    
+  });
+})
