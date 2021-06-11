@@ -62,6 +62,19 @@ Code:
 numContains(13);
 Expected Output: 1
 ```
+```
+Test: "It should return a 2 if a 2 is found in the index"
+Code:
+numContains(132);
+Expected Output: 2
+
+```
+```
+Test: "It should return a 3 if a 3 is found in the index"
+Code:
+numContains(132);
+Expected Output: 3
+```
 
 ## Setup/Installation Requirements
 
