@@ -50,6 +50,11 @@ $(document).ready(function () {
   let outputArray = [];
   $('#advanced').click(function () {
     $('.advanced').slideToggle();
+    if ($('#advanced').is(":not(:checked)")) {
+      $("#text1, #text2, #text3").prop('required',false);
+    } else if ($('#advanced').is(":checked")) {
+      $("#text1, #text2, #text3").prop('required',true);
+    }
   });
   $('form#form').submit(function (event) {
     event.preventDefault();
