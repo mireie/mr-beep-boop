@@ -47,12 +47,7 @@ mrBeepBoop(10);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]
 ```
 
-```
-Test: "It should return from the match array if the index contains a 1, 2, or 3."
-Code:
-mrBeepBoop(10);
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]
-```
+
 ---
 ```
 Describe: numContains()
@@ -66,7 +61,7 @@ Expected Output: ["1","3"]
 ```
 Test: "It should return a 1 if a 1 is found in the index"
 Code:
-numContains(13);
+numContains(132);
 Expected Output: 1
 ```
 ```
