@@ -1,3 +1,4 @@
+//Business Logic
 function mrBeepBoop(input) {
   const matchArray = [0,"Beep!","Boop!","Won't you be my neighbor?"];
   let outputArray = [];
@@ -13,7 +14,6 @@ function mrBeepBoop(input) {
 function numContains(index) {
   let indexArray=[];
   let indexString=index.toString();
-  let output = 0;
   let check3 = false;
   let check2 = false;
   let check1 = false;
@@ -38,3 +38,5 @@ function numContains(index) {
     return 0;
   }
 }
+
+//interface logic
