@@ -5,20 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="js/jquery-3.6.0.js" ></script>
   <script src="js/scripts.js"></script>
-  <title>Mr Beep Boop</title>
+  <title>Mr. Beep Boop</title>
 </head>
 <body>
   <div class="container">
-    <form id="form">
-      <input id="userNumber" type="number"></input>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <div class="result">
-      <p>Your result is:</p>
-      <p id="output"></p>
+    <h1>Mr. Beep Boop</h1>
+    <div class="row">
+      <div class="col" id="entry">
+        <form id="form">
+          <p>Enter a number below and Mr. Beep Boops will give you a result!</p>
+          <input id="userNumber" type="number"></input>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-8" id="result">
+        <h2>Your result is:</h2>
+        <p id="output"></p>
+      </div>
     </div>
   </div>
 </body>
