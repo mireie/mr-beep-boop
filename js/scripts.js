@@ -13,16 +13,17 @@ function mrBeepBoop(input) {
 function numContains(index) {
   let indexArray=[];
   let indexString=index.toString();
+  let output = 0;
   indexArray = indexString.split("");
   for (let i = 0; i < indexArray.length; i++) {
     if (indexArray[i] === "3") {
-      return 3;
+      output = 3;
     } else if (indexArray[i] === "2") {
-      return 2;
+      output = 2;
     } else if (indexArray[i] === "1") {
-      return 1;
+      output = 1;
     } else {
-      return 0;
     }
   }
+  return output;
 }
