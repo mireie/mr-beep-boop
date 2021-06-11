@@ -1,7 +1,5 @@
 # Mr. Beep Boop
 
-### A template for readmes, how meta
-
 ### By Michael Reiersgaard
 
 ## Technologies Used
