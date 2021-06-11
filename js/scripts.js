@@ -45,9 +45,6 @@ $(document).ready(function() {
   $('form#form').submit(function(event) {
     event.preventDefault();
     outputArray = mrBeepBoop(parseInt($('#userNumber').val()));
-    outputArray.forEach(function(element) {
-      $('#output').append(element+", ");
-    })
-    
+    $('p#output').text(outputArray.join(", "));
   });
 })
