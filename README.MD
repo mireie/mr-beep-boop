@@ -18,13 +18,27 @@
 ## Specs
 
 ```
-Describe: wordCounter()
+Describe: mrBeepBoop()
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code:
-const text = "hello";
-wordCounter(text);
-Expected Output: 1
+mrBeepBoop(0)
+Expected Output: [0]
+```
+
+```
+Test: "It should return the matching value from an array if 1, 2, or 3 are inputted"
+Code:
+const matchArray = [0, "Beep!","Boop!","Won't you be my neighbor?"]
+mrBeepBoop(1);
+Expected Output: ["Beep!"]
+```
+
+```
+Test: "It should return an array with numbers from 0 to the user's inputted number"
+Code:
+mrBeepBoop(8);
+Expected Output: [0,1,2,3,4,5]
 ```
 
 ## Setup/Installation Requirements
