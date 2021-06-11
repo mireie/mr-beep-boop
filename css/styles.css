@@ -1,6 +1,11 @@
 #result {
   background-color:aqua;
+  display:none;
 }
 #entry {
   background-color: lightcoral;
+}
+#result:hover {
+  max-height:500px;
+  background-color: darkblue;
 }
