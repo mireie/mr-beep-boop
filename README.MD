@@ -116,6 +116,11 @@ User Input: -5
 Code: if (parseInt($('#userNumber').val()) < 0)
 Expected Output: I bet you think you're pretty clever, huh? Try again with a positive integer. And not too big, ya hear me?
 ```
+```
+Test: "It should not allow submission if advanced is checked and input(s) is(are) empty"
+Code: if (parseInt($('#userNumber').val()) < 0)
+Expected Output: I bet you think you're pretty clever, huh? Try again with a positive integer. And not too big, ya hear me?
+```
 
 ## Setup/Installation Requirements
 
