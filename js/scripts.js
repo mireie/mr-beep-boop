@@ -58,6 +58,7 @@ $(document).ready(function () {
   });
   $('form#form').submit(function (event) {
     event.preventDefault();
+    $("#result h2").text("Mr. Beep Boop works his magic and returns:")
     const userNumber = parseInt($('#userNumber').val());
     const text1 = $('#text1').val();
     const text2 = $('#text2').val();
