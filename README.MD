@@ -45,7 +45,7 @@ mrBeepBoop(10);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]
 ```
 ```
-Test: "It should change the array for 1,2,3 if advanced features are enabled
+Test: "It should change the array for 1,2,3 if advanced features are enabled"
 Code:
 mrBeepBoop(1,1,"five")
 Expected Output: [0, five]
