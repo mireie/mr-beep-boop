@@ -24,15 +24,16 @@ function numContains(index) {
   let check2 = false;
   let check1 = false;
   indexArray = indexString.split("");
-  for (let i = 0; i < indexArray.length; i++) {
-    if (indexArray[i] === "3") {
+  indexArray.forEach(function (element) {
+    if (element === "3") {
       check3 = true;
-    } else if (indexArray[i] === "2") {
+    } else if (element === "2") {
       check2 = true;
-    } else if (indexArray[i] === "1") {
+    } else if (element === "1") {
       check1 = true;
     } else { }
-  }
+  });
+
   if (check3 === true) {
     return 3;
   } else if (check2 === true) {
