@@ -1,44 +1,56 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #333;
 }
 
 .header {
-    color: white;
+  color: white;
 }
 
 #result {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 #entry {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
-#entry p,
-#result h2 {
-    margin-top: 1rem;
+#entry p, #result h2 {
+  margin-top: 1rem;
 }
 
 .entry-block {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-#userNumber {
-    text-align: center;
-}
-
-input[type="number"],
-input[type="text"] {
-    display: block;
-    clear: both;
+input[type="number"], input[type="text"] {
+  display: block;
+  clear: both;
+  width:100%;
 }
 
 .btn {
-    display: block;
-    clear: both;
+  display: block;
+  clear: both;
+  background-color:aqua;
+  border-radius: 0;
+  width:100%;
 }
 
 .advanced {
+  display: none;
+}
+
+.input-hide {
+  background-color: #303030;
+  color: white;
+  padding: .5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .input-hide {
     display: none;
+  }
 }

@@ -77,4 +77,12 @@ $(document).ready(function () {
     }
     $('p#output').text(outputArray.join(", "));
   });
+  $('.input-hide').click(function() {
+    if ($('form').is(':hidden')) {
+      ($('#input-text')).text("Hide");
+    } else {
+      ($('#input-text')).text("Show");
+    }
+    $('form').slideToggle();
+  });
 })
